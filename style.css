@@ -6,7 +6,7 @@
     box-sizing: border-box;  
 }  
 body{  
-    height: 100vh;  
+    height: 100v;  
     background: #0F62FE;  
 }
 #head-text{  
@@ -22,11 +22,34 @@ body{
     left: 50%; 
     background: white; 
     border-radius: 1px; 
-    min-width: 450px; 
+    min-width: 300px; 
     position: absolute; 
     min-height: 100px; 
     transform: translate(-50%,-50%); 
+    border-radius: 30px;
 }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        left: 50%; 
+        top: 30%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; 
+        left: 50%; 
+        top: 25%;
+        min-width: auto; 
+    }
+}
+
+
 #newtask{
     position: relative;
     padding: 30px 20px;
@@ -64,11 +87,11 @@ body{
 }
 .tasks{
     position: absolute;
-    border-radius: 0px;
+    border-radius: 30px;
     width: 100%;
     background-color: white;
     padding: 30px 20px;
-    margin-top: 0px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 .tasks.overflow{  
